@@ -17,6 +17,7 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
   - [LazyGit](https://github.com/jesseduffield/lazygit)
   - JetBrains Mono Nerd Font from [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
   - Etc.
+- [btop](https://github.com/aristocratos/btop)
 - [Helium Browser](https://github.com/imputnet/helium)
 - Swapped `tuned-ppd` for `power-profiles-daemon` for optimization on Framework 13 Pro. See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned).
 
@@ -87,3 +88,8 @@ cosign verify --key cosign.pub ghcr.io/cvsickle/bazzite-dx
 - GitHub - [https://github.com/cvsickle/bazzite-dx](https://github.com/cvsickle/bazzite-dx)
 - Codeberg - [https://codeberg.org/cvsickle/bazzite-dx](https://codeberg.org/cvsickle/bazzite-dx)
 - Forgejo (Mirror) - [https://git.cvsickle.com/cvsickle/bazzite-dx](https://git.cvsickle.com/cvsickle/bazzite-dx)
+
+## Other custom OS images
+
+- [Bluefin DX](https://github.com/cvsickle/bluefin-dx)
+- [Zirconium](https://github.com/cvsickle/zirconium)

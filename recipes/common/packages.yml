@@ -16,6 +16,8 @@ modules:
         - tree-sitter-cli
         - ripgrep
         - fd-find
+        - btop
+
         - helium-bin
     replace:
       - from-repo: fedora
