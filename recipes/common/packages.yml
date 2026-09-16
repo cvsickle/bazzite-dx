@@ -17,3 +17,8 @@ modules:
         - ripgrep
         - fd-find
         - helium-bin
+    replace:
+      - from-repo: fedora
+        packages:
+          - old: tuned-ppd
+            new: power-profiles-daemon
