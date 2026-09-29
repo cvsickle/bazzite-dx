@@ -19,7 +19,8 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
   - Etc.
 - [btop](https://github.com/aristocratos/btop)
 - [Helium Browser](https://github.com/imputnet/helium)
-- Swapped `tuned-ppd` for `power-profiles-daemon` for optimization on Framework 13 Pro. See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned).
+- Swapped `tuned-ppd` for `power-profiles-daemon`
+  - See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned) for info.
 
 ### Brew
 
@@ -30,8 +31,10 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
 
 - [Easy Effects](https://flathub.org/en/apps/com.github.wwmm.easyeffects)
 - [Gear Lever](https://flathub.org/en/apps/it.mijorus.gearlever)
-- [Web Apps](https://flathub.org/en/apps/net.codelogistics.webapps)
+- [LocalSend](https://flathub.org/en/apps/org.localsend.localsend_app)
+  - See [docs/localsend](./docs/localsend.md) for firewall information.
 - [SiriKali](https://flathub.org/en/apps/io.github.mhogomchungu.sirikali)
+- [Web Apps](https://flathub.org/en/apps/net.codelogistics.webapps)
 
 ## Installation
 
