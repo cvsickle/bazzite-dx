@@ -2,25 +2,38 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 
 modules:
+  # Fedora packages
   - type: dnf
-    repos:
-      copr:
-        - dejan/lazygit
-        - imput/helium
-      nonfree: rpmfusion
-      cleanup: true
     install:
       packages:
+        # Terminal utilities
         - neovim
-        - lazygit
         - tree-sitter-cli
         - ripgrep
         - fd-find
         - btop
-
-        - helium-bin
     replace:
       - from-repo: fedora
         packages:
           - old: tuned-ppd
             new: power-profiles-daemon
+
+  # Lazygit
+  - type: dnf
+    repos:
+      copr:
+        - dejan/lazygit
+      cleanup: true
+    install:
+      packages:
+        - lazygit
+
+  # Helium browser
+  - type: dnf
+    repos:
+      copr:
+        - imput/helium
+      cleanup: true
+    install:
+      packages:
+        - helium-bin
