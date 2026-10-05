@@ -11,7 +11,8 @@ modules:
         - tree-sitter-cli
         - ripgrep
         - fd-find
-        - btop
+        # Applications
+        - arm-image-installer
     replace:
       - from-repo: fedora
         packages:
