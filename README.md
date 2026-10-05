@@ -12,15 +12,19 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
 
 ### System packages added
 
+#### Usability
+
+- Nerd Fonts from [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+- Swapped `tuned-ppd` for `power-profiles-daemon`
+  - See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned) for info.
+
+#### Applications
+
 - Everything needed for [LazyVim](https://github.com/lazyvim/lazyvim)
   - [Neovim](https://github.com/neovim/neovim)
   - [LazyGit](https://github.com/jesseduffield/lazygit)
-  - JetBrains Mono Nerd Font from [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
   - Etc.
-- [btop](https://github.com/aristocratos/btop)
 - [Helium Browser](https://github.com/imputnet/helium)
-- Swapped `tuned-ppd` for `power-profiles-daemon`
-  - See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned) for info.
 
 ### Brew
 
@@ -66,15 +70,15 @@ systemctl reboot
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/cvsickle/bazzite-dx:latest
 # Nvidia image
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/cvsickle/bazzite-dx-nvidia:latest
+
+# Reboot when done.
+systemctl reboot
 ```
 
-- If the boot loader menu entries are still showing the upstream image name, force them to update.
+- If the boot loader menu entries are still showing the upstream image name, force them to update. Unfortunately, this is only a one-time fix. I'm still researching why this happens sometimes.
 
 ```bash
 sudo rpm-ostree kargs --append=bls.refresh=1
-systemctl reboot
-
-sudo rpm-ostree kargs --delete=bls.refresh=1
 systemctl reboot
 ```
 
@@ -96,3 +100,4 @@ cosign verify --key cosign.pub ghcr.io/cvsickle/bazzite-dx
 
 - [Bluefin DX](https://github.com/cvsickle/bluefin-dx)
 - [Zirconium](https://github.com/cvsickle/zirconium)
+- [Entrypoint](https://github.com/cvsickle/entrypoint)
