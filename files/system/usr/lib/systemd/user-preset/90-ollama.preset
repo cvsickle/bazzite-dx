@@ -1,0 +1,3 @@
+# Ollama is disabled by default. Enable per user with:
+#   systemctl --user enable --now ollama.service
+disable ollama.service
