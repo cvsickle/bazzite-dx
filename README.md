@@ -25,6 +25,8 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
   - [LazyGit](https://github.com/jesseduffield/lazygit)
   - Etc.
 - [Helium Browser](https://github.com/imputnet/helium)
+- [Ollama](https://ollama.com/)
+  - See [docs/ollama](./docs/ollama.md) for enabling, disabling, and firewall instructions.
 
 ### Brew
 
