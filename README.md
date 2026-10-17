@@ -24,6 +24,7 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
   - [Neovim](https://github.com/neovim/neovim)
   - [LazyGit](https://github.com/jesseduffield/lazygit)
   - Etc.
+- [starship](https://github.com/starship/starship)
 - [Helium Browser](https://github.com/imputnet/helium)
 - [Ollama](https://ollama.com/)
   - See [docs/ollama](./docs/ollama.md) for enabling, disabling, and firewall instructions.

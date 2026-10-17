@@ -20,6 +20,16 @@ modules:
           - old: tuned-ppd
             new: power-profiles-daemon
 
+  # Starship
+  - type: dnf
+    repos:
+      copr:
+        - atim/starship
+      cleanup: true
+    install:
+      packages:
+        - starship
+
   # Lazygit
   - type: dnf
     repos:
