@@ -5,3 +5,4 @@ modules:
   - type: script
     scripts:
       - install-btop-catppuccin.sh
+      - install-ollama.sh
