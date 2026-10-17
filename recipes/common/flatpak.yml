@@ -4,7 +4,7 @@
 modules:
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: false
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
@@ -12,5 +12,7 @@ modules:
           - it.mijorus.gearlever # Manage AppImages
           - net.codelogistics.webapps # Manage Web Apps
           - io.github.mhogomchungu.sirikali # GUI for managing encrypted volumes
+          - io.podman_desktop.PodmanDesktop # GUI for managing containers
           - org.localsend.localsend_app # Local file sharing app
-      - scope: user # Also add Flathub user repo, but no user packages
+      - notify: false
+        scope: user # Also add Flathub user repo, but no user packages
