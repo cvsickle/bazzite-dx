@@ -12,6 +12,9 @@ modules:
         - ripgrep
         - fd-find
         - zstd
+        # GTK Theming
+        - kde-gtk-config
+        - xdg-desktop-portal-gtk
         # Applications
         - arm-image-installer
     replace:
