@@ -15,6 +15,8 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
 #### Usability
 
 - Nerd Fonts from [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+- [GitHub CLI](https://cli.github.com/)
+- [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager)
 - Swapped `tuned-ppd` for `power-profiles-daemon`
   - See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned) for info.
 

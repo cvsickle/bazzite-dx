@@ -6,3 +6,4 @@ modules:
     scripts:
       - install-btop-catppuccin.sh
       - install-ollama.sh
+      - install-gcm.sh
