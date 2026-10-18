@@ -7,12 +7,14 @@ modules:
     install:
       packages:
         # Terminal utilities
+        - gh
         - neovim
         - tree-sitter-cli
         - ripgrep
         - fd-find
         - zstd
         # GTK Theming
+        - breeze-gtk
         - kde-gtk-config
         - xdg-desktop-portal-gtk
         # Applications
