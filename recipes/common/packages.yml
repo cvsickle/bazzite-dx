@@ -12,6 +12,7 @@ modules:
         - tree-sitter-cli
         - ripgrep
         - fd-find
+        - iperf3
         # GTK Theming
         - breeze-gtk
         - sassc
