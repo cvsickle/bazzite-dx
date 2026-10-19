@@ -7,3 +7,4 @@ modules:
       - install-btop-catppuccin.sh
       - install-ollama.sh
       - install-gcm.sh
+      - install-plasma-theme-master.sh

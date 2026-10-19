@@ -14,10 +14,17 @@ modules:
         - fd-find
         - iperf3
         # GTK Theming
+        - adw-gtk3-theme
         - breeze-gtk
-        - sassc
-        - sass
-        - gtk-murrine-engine
+        # plasma-theme-master build dependencies
+        - gcc-c++
+        - cmake
+        - extra-cmake-modules
+        - qt6-qtbase-devel
+        - kf6-kconfig-devel
+        - kf6-kcoreaddons-devel
+        - kf6-kcolorscheme-devel
+        - pipx
         # Applications
         - arm-image-installer
     replace:
@@ -55,3 +62,13 @@ modules:
     install:
       packages:
         - helium-bin
+
+  # Bibata Cursor Theme
+  - type: dnf
+    repos:
+      copr:
+        - peterwu/rendezvous
+      cleanup: true
+    install:
+      packages:
+        - bibata-cursor-themes

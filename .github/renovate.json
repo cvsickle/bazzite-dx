@@ -8,7 +8,8 @@
       "customType": "regex",
       "managerFilePatterns": [
         "/(^|/)install-tools\\.sh$/",
-        "/(^|/)install-gcm\\.sh$/"
+        "/(^|/)install-gcm\\.sh$/",
+        "/(^|/)install-plasma-theme-master\\.sh$/"
       ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\n\\w+_VERSION=\"(?<currentValue>.+?)\""
