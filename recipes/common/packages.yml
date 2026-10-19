@@ -12,11 +12,11 @@ modules:
         - tree-sitter-cli
         - ripgrep
         - fd-find
-        - zstd
         # GTK Theming
         - breeze-gtk
-        - kde-gtk-config
-        - xdg-desktop-portal-gtk
+        - sassc
+        - sass
+        - gtk-murrine-engine
         # Applications
         - arm-image-installer
     replace:
