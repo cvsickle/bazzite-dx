@@ -17,6 +17,8 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
 - Nerd Fonts from [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 - [GitHub CLI](https://cli.github.com/)
 - [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager)
+- Dependencies for [Fausto-Korpsvart](https://github.com/Fausto-Korpsvart) themes.
+  - See [docs/gtk_themes](./docs/gtk_themes.md).
 - Swapped `tuned-ppd` for `power-profiles-daemon`
   - See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned) for info.
 
@@ -86,6 +88,10 @@ systemctl reboot
 sudo rpm-ostree kargs --append=bls.refresh=1
 systemctl reboot
 ```
+
+## Recommended GTK Theming
+
+Want to make your apps look less gray? Check out the [theming instructions](./docs/themes.md).
 
 ## Verification
 
