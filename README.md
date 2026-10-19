@@ -89,10 +89,6 @@ sudo rpm-ostree kargs --append=bls.refresh=1
 systemctl reboot
 ```
 
-## Recommended GTK Theming
-
-Want to make your apps look less gray? Check out the [theming instructions](./docs/themes.md).
-
 ## Verification
 
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
