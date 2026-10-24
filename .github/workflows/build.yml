@@ -37,19 +37,6 @@ jobs:
           - recipe-nvidia.yml
           - recipe-base.yml
     steps:
-      # chunkah writes an uncompressed OCI directory next to the rootfs and the
-      # image, which exhausted disk quota on the runner. Reclaim what we can first
-      # and log usage so the next failure shows where the space went.
-      - name: Free extra disk space for chunkah
-        run: |
-          echo "Disk usage before cleanup:"
-          df -h /
-          sudo docker image prune --all --force || true
-          sudo docker builder prune --all --force || true
-          sudo rm -rf /opt/hostedtoolcache || true
-          echo "Disk usage after cleanup:"
-          df -h /
-
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.13

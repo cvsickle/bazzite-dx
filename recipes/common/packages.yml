@@ -16,15 +16,6 @@ modules:
         # GTK Theming
         - adw-gtk3-theme
         - breeze-gtk
-        # plasma-theme-master build dependencies
-        - gcc-c++
-        - cmake
-        - extra-cmake-modules
-        - qt6-qtbase-devel
-        - kf6-kconfig-devel
-        - kf6-kcoreaddons-devel
-        - kf6-kcolorscheme-devel
-        - pipx
         # Applications
         - arm-image-installer
     replace:
