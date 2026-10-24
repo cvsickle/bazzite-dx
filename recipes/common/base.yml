@@ -23,6 +23,9 @@ modules:
   # Install misc. stuff.
   - from-file: common/misc.yml
 
+  # Remove stuff that can be cleaned up.
+  - from-file: common/cleanup.yml
+
   # Update the os-release.
   - from-file: common/os-release.yml
 
