@@ -5,7 +5,7 @@ set -euo pipefail
 # Build and install https://github.com/SonOfMithras/plasma-theme-master
 # Build dependencies are provided by recipes/common/packages.yml.
 # renovate: datasource=github-releases depName=SonOfMithras/plasma-theme-master
-PLASMA_THEME_MASTER_VERSION="2.0.7"
+PLASMA_THEME_MASTER_VERSION="2.1.0"
 readonly release_url="https://github.com/SonOfMithras/plasma-theme-master/archive/refs/tags/v${PLASMA_THEME_MASTER_VERSION}.tar.gz"
 readonly prefix="/usr"
 temp_dir="$(mktemp -d)"
