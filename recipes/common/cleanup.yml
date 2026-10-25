@@ -1,0 +1,15 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+  # Remove build-only packages.
+  - type: dnf
+    remove:
+      auto-remove: false
+      packages:
+        - cmake
+        - extra-cmake-modules
+        - qt6-qtbase-devel
+        - kf6-kconfig-devel
+        - kf6-kcoreaddons-devel
+        - kf6-kcolorscheme-devel
