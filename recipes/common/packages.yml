@@ -26,11 +26,6 @@ modules:
         - pipx
         # Applications
         - arm-image-installer
-    replace:
-      - from-repo: fedora
-        packages:
-          - old: tuned-ppd
-            new: power-profiles-daemon
 
   # Starship
   - type: dnf

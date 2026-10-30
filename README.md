@@ -19,8 +19,7 @@ It was created using the [BlueBuild Workshop](https://workshop.blue-build.org/).
 - [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager)
 - Dependencies for [Fausto-Korpsvart](https://github.com/Fausto-Korpsvart) themes.
   - See [docs/gtk_themes](./docs/gtk_themes.md).
-- Swapped `tuned-ppd` for `power-profiles-daemon`
-  - See the [Phoronix writeup](https://www.phoronix.com/review/fedora-pantherlake-thermald-tuned) for info.
+- [x3d-cache.service](./files/system/usr/lib/systemd/system/x3d-cache.service) to adjust where the scheduler runs processes on dual-CCD X3D CPUs. See [docs/x3d-vcache](./docs/x3d-vcache.md) for setup.
 
 #### Applications
 

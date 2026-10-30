@@ -1,0 +1,12 @@
+[Unit]
+Description=Set AMD X3D V-Cache scheduling mode to cache
+ConditionPathExists=/sys/bus/platform/drivers/amd_x3d_vcache
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'for f in /sys/bus/platform/drivers/amd_x3d_vcache/*/amd_x3d_mode; do [ -e "$f" ] && echo cache > "$f"; done'
+
+[Install]
+WantedBy=multi-user.target
